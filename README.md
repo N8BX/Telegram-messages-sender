@@ -9,7 +9,7 @@ A Python script that sends messages to all Telegram contacts using the **Teletho
 ## Installation
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/YOUR_USERNAME/telegram-message-sender.git
+   git clone https://github.com/N8BX/telegram-message-sender.git
    cd telegram-message-sender
    ```
 
