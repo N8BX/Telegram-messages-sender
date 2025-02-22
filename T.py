@@ -1,0 +1,41 @@
+'''
+  _   _  ___  ______   ____   __
+ | \ | |/ _ \|  _ \ \ / /\ \ / /
+ |  \| | (_) | |_) \ V /  \ V / 
+ | . ` |> _ <|  _ < > <    > <  
+ | |\  | (_) | |_) / . \  / . \ 
+ |_| \_|\___/|____/_/ \_\/_/ \_\
+'''
+
+from telethon import TelegramClient
+import asyncio
+ 
+api_id = 'YOUR_API_ID'
+api_hash = 'YOUR_API_HASH'
+
+client = TelegramClient('session_name', api_id, api_hash)
+
+async def send_messages_to_all():
+    try:
+        print("Logging in...")
+        await client.start()
+        print("Login successful.")
+        message = input('Enter Your Message: ')
+        dialogs = await client.get_dialogs()
+        if not dialogs:
+            print("No conversations found.")
+        else:
+            print(f"Found {len(dialogs)} conversations.")
+
+        for dialog in dialogs:
+            if dialog.is_user and not dialog.entity.bot:
+                try:
+                    await client.send_message(dialog.id, message)
+                    print(f"Message sent to {dialog.name}")
+                except Exception as e:
+                    print(f"Error sending message to {dialog.name}: {e}")
+    except Exception as e:
+        print(f"Script error: {e}")
+
+with client:
+    client.loop.run_until_complete(send_messages_to_all())
