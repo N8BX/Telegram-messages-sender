@@ -56,9 +56,9 @@ with client:
 ```
 
 ## Connect with Me
-- **GitHub**: [YOUR_GITHUB](https://github.com/N8BX)
-- **Telegram**: [YOUR_TELEGRAM](https://t.me/SY_BROTHER)
-- **Twitter/X**: [YOUR_TWITTER](https://twitter.com/SY_GRX)
+- **GitHub**: [GITHUB](https://github.com/N8BX)
+- **Telegram**: [TELEGRAM](https://t.me/SY_BROTHER)
+- **Twitter/X**: [TWITTER OR X](https://twitter.com/SY_GRX)
 
 ## ⭐ Star This Repository
 If you like this project, don't forget to **star** ⭐ it on GitHub!
