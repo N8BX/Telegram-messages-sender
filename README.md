@@ -21,6 +21,15 @@ A Python script that sends messages to all Telegram contacts using the **Teletho
 ## Usage
 Run the script:
 ```python
+'''
+  _   _  ___  ______   ____   __
+ | \ | |/ _ \|  _ \ \ / /\ \ / /
+ |  \| | (_) | |_) \ V /  \ V / 
+ | . ` |> _ <|  _ < > <    > <  
+ | |\  | (_) | |_) / . \  / . \ 
+ |_| \_|\___/|____/_/ \_\/_/ \_\
+'''
+
 from telethon import TelegramClient
 import asyncio
  
